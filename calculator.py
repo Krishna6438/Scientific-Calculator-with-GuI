@@ -113,7 +113,7 @@ def btnc_clicked(*args):
     disp.insert(0, '0')
 
 
-def sin_clicked():
+def sin_cal():
     try:
         ans = float(disp.get())
         if switch is True:
@@ -126,7 +126,7 @@ def sin_clicked():
         tkinter.messagebox.showerror("Value Error", "Check your values and operators")
 
 
-def cos_clicked():
+def cos_cal():
     try:
         ans = float(disp.get())
         if switch is True:
@@ -139,7 +139,7 @@ def cos_clicked():
         tkinter.messagebox.showerror("Value Error", "Check your values and operators")
 
 
-def tan_clicked():
+def tan_cal():
     try:
         ans = float(disp.get())
         if switch is True:
@@ -152,7 +152,7 @@ def tan_clicked():
         tkinter.messagebox.showerror("Value Error", "Check your values and operators")
 
 
-def arcsin_clicked():
+def arcsin_cal():
     try:
         ans = float(disp.get())
         if switch is True:
@@ -165,7 +165,7 @@ def arcsin_clicked():
         tkinter.messagebox.showerror("Value Error", "Check your values and operators")
 
 
-def arccos_clicked():
+def arccos_cal():
     try:
         ans = float(disp.get())
         if switch is True:
@@ -178,7 +178,7 @@ def arccos_clicked():
         tkinter.messagebox.showerror("Value Error", "Check your values and operators")
 
 
-def arctan_clicked():
+def arctan_cal():
     try:
         ans = float(disp.get())
         if switch is True:
@@ -191,12 +191,12 @@ def arctan_clicked():
         tkinter.messagebox.showerror("Value Error", "Check your values and operators")
 
 
-def pow_clicked():
+def pow_cal():
     pos = len(disp.get())
     disp.insert(pos, '**')
 
 
-def round_clicked():
+def round_cal():
     try:
         ans = float(disp.get())
         ans = round(ans)
@@ -348,13 +348,13 @@ pi_btn.pack(side=LEFT, expand=TRUE, fill=BOTH)
 fact_btn = Button(btnrow1, text=" x! ", font="Segoe 18", relief=GROOVE, bd=0, command=fact_clicked, fg="white", bg="#333333")
 fact_btn.pack(side=LEFT, expand=TRUE, fill=BOTH)
 
-sin_btn = Button(btnrow1, text="sin", font="Segoe 18", relief=GROOVE, bd=0, command=sin_clicked, fg="white", bg="#333333")
+sin_btn = Button(btnrow1, text="sin", font="Segoe 18", relief=GROOVE, bd=0, command=sin_cal, fg="white", bg="#333333")
 sin_btn.pack(side=LEFT, expand=TRUE, fill=BOTH)
 
-cos_btn = Button(btnrow1, text="cos", font="Segoe 18", relief=GROOVE, bd=0, command=cos_clicked, fg="white", bg="#333333")
+cos_btn = Button(btnrow1, text="cos", font="Segoe 18", relief=GROOVE, bd=0, command=cos_cal, fg="white", bg="#333333")
 cos_btn.pack(side=LEFT, expand=TRUE, fill=BOTH)
 
-tan_btn = Button(btnrow1, text="tan", font="Segoe 18", relief=GROOVE, bd=0, command=tan_clicked, fg="white", bg="#333333")
+tan_btn = Button(btnrow1, text="tan", font="Segoe 18", relief=GROOVE, bd=0, command=tan_cal, fg="white", bg="#333333")
 tan_btn.pack(side=LEFT, expand=TRUE, fill=BOTH)
 
 btn1 = Button(btnrow1, text="1", font="Segoe 23", relief=GROOVE, bd=0, command=btn1_clicked, fg="white", bg="#333333")
